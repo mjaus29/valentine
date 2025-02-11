@@ -28,7 +28,7 @@ const App = () => {
         </div>
       )}
       {pleaseArray.length > 0 && (
-        <div className="absolute top-[10%] flex flex-wrap gap-4">
+        <div className="flex absolute top-[10%] justify-center items-center flex-wrap gap-4">
           {pleaseArray.map((val, index) => (
             <div
               key={index}
@@ -39,7 +39,7 @@ const App = () => {
           ))}
         </div>
       )}
-      <div className="absolute bottom-[30%] flex flex-col gap-4">
+      <div className="absolute bottom-[30%] flex justify-center items-center flex-col gap-4">
         <h1
           className={`text-3xl font-bold py-4 px-8 rounded-full ${
             isTrue
@@ -50,7 +50,7 @@ const App = () => {
           {isTrue ? "I Love You So Much" : "Will You Be My Valentine?"}
         </h1>
         {!isTrue && (
-          <div className="flex gap-4">
+          <div className="flex justify-center items-center gap-4">
             <div
               onClick={() => setPleaseArray((prev) => ["please", ...prev])}
               className="text-xl bg-orange-500 text-white font-bold py-2 px-6 cursor-pointer rounded-full"
