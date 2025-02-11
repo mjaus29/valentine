@@ -47,7 +47,9 @@ const App = () => {
               : "bg-red-500 text-white"
           }`}
         >
-          {isTrue ? "I Love You So Much" : "Will You Be My Valentine?"}
+          {isTrue
+            ? "I Love You So Much"
+            : "Ira Monica, Will You Be My Valentine?"}
         </h1>
         {!isTrue && (
           <div className="flex justify-center items-center gap-4">
